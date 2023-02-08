@@ -1,0 +1,46 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --wrapper_width: 1100px;
+  --bg_header: #ff6900;
+  --light_text_color: #e7e7e7;
+}
+.wrapper {
+  max-width: var(--wrapper_width);
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+/* /general */
+
+/* header */
+header {
+  background-color: var(--bg_header);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  color: var(--light_text_color);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.3rem;
+}
+nav .logo img {
+  width: 6rem;
+  transform: translate(-25%, 0);
+}
+nav .icone {
+  display: flex;
+  gap: 0.6rem;
+}
+/* /header */
